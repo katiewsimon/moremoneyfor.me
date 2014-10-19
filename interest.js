@@ -52,13 +52,32 @@ jQuery(document).ready(function(){
 		var totalSavings = getTotalSavings(presentAge, endAge, income, savingsPercent);
 		var ageLoanFree = getAgeLoanFree(presentAge, income, loanBalance);
 
-		savingsData = new Array(presentAge - 65);
-		for (var i = 0; i < savingsData.length; i--) {
-			var endAgeForLoop = presentAge + i;
-			savingsData[i] = getTotalSavings(presentAge, endAgeForLoop, income, savingsPercent);
+		var years = [];
+		var savings = [];
+
+		for (var i = 0; i <= 65 - presentAge; i++) {
+			var endAgeForLoop = (presentAge*1 + i*1);
+			years.push(endAgeForLoop);
+			savings.push(1*getTotalSavings(presentAge*1, endAgeForLoop*1, income*1, savingsPercent*1));
 		}
 
-		CHARTNAME.addData(savingsData[],);
+		console.log("SAVINGS");
+		console.log(savings);
+
+		var data = {
+	    labels : years,
+	    datasets : [
+	    {
+	      fillColor : "rgba(172,194,132,0.4)",
+	      strokeColor : "#065C27",
+	      pointColor : "#white",
+	      pointStrokeColor : "#A4BD99",
+	      data : savings
+	    }
+	    ]
+	  	}
+	  	var savings = document.getElementById('savings').getContext('2d');
+	  	new Chart(savings).Line(data);
 
 		console.log("savingsPercent" + savingsPercent);
 	});
@@ -82,16 +101,18 @@ function getSavingsPercent(income, loanBalance) {
 function getTotalSavings(presentAge, endAge, income, savingsPercent) {
 
 	var prevYearSavings = income * savingsPercent;
-	var totalSavings = 0;
+	var totalSavings = income * savingsPercent;
 	var newYearSavings = 0;
 
-	for (var i = presentAge; i == 65; i++) {
+	console.log("prevYearSavings is " + prevYearSavings);
+
+	for (var i = presentAge; i <= endAge; i++) {
 
 		prevYearSavings = income * savingsPercent;
 		var returnOnTotalSavings = totalSavings * .05;
 
 		if (savingsPercent < .2) {
-			savingsPercent += .01;
+			savingsPercent = savingsPercent + .01;
 			newYearSavings = prevYearSavings * savingsPercent;
 		}
 		else {
@@ -99,11 +120,15 @@ function getTotalSavings(presentAge, endAge, income, savingsPercent) {
 			newYearSavings = prevYearSavings * savingsPercent;
 		}
 
-		income += income * .02;
+		income = income + income * .02;
+		
+		console.log("totalSavings is " + totalSavings);
+		console.log("newYearSavings is " + newYearSavings)
 
-		totalSavings += returnOnTotalSavings + newYearSavings;
+		totalSavings = totalSavings + returnOnTotalSavings + newYearSavings;
 	}
-
+	console.log("totalsavings in function");
+	console.log(totalSavings);
 	return totalSavings;
 }
 
