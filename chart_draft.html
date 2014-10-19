@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Chart.js demo</title>
+	<script src='Chart.min.js'></script>
+</head>
+<body>
+	<canvas id="savings" width="600" height="400"></canvas>
+	<script>
+	var data = {
+		labels : ["January","February","March","April","May","June"],
+		datasets : [
+		{
+			fillColor : "rgba(172,194,132,0.4)",
+			strokeColor : "#065C27",
+			pointColor : "#white",
+			pointStrokeColor : "#A4BD99",
+			data : [203,156,99,251,305,247]
+		}
+		]
+	}
+	var savings = document.getElementById('savings').getContext('2d');
+	new Chart(savings).Line(data);
+	</script>
+</body>
+</html>
