@@ -1,0 +1,183 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'http-server' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'http-server', null ]
+5 verbose cache add name=undefined spec="http-server" args=["http-server",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'http-server',
+6 verbose parsed url   path: 'http-server',
+6 verbose parsed url   href: 'http-server' }
+7 silly lockFile ed608307-http-server http-server
+8 verbose lock http-server /Users/katiesimon/.npm/ed608307-http-server.lock
+9 silly lockFile ed608307-http-server http-server
+10 silly lockFile ed608307-http-server http-server
+11 verbose addNamed [ 'http-server', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 550353c6-http-server http-server@
+14 verbose lock http-server@ /Users/katiesimon/.npm/550353c6-http-server.lock
+15 silly addNameRange { name: 'http-server', range: '*', hasData: false }
+16 verbose request where is /http-server
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 0728463aa0a875d8
+19 verbose url raw /http-server
+20 verbose url resolving [ 'https://registry.npmjs.org/', './http-server' ]
+21 verbose url resolved https://registry.npmjs.org/http-server
+22 verbose request where is https://registry.npmjs.org/http-server
+23 info trying registry request attempt 1 at 17:52:57
+24 http GET https://registry.npmjs.org/http-server
+25 http 200 https://registry.npmjs.org/http-server
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Sat, 18 Oct 2014 21:52:58 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"6BN5SRSQ8BN8SAJO8W46PO9OH"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '35974',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '2',
+26 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1413669178.390441,VS0,VE0',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'http-server', range: '*', hasData: true }
+28 silly addNameRange versions [ 'http-server',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '0.2.9',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.5.2',
+28 silly addNameRange     '0.5.3',
+28 silly addNameRange     '0.5.5',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.7.2' ] ]
+29 verbose addNamed [ 'http-server', '0.7.2' ]
+30 verbose addNamed [ '0.7.2', '0.7.2' ]
+31 silly lockFile b6ed51df-http-server-0-7-2 http-server@0.7.2
+32 verbose lock http-server@0.7.2 /Users/katiesimon/.npm/b6ed51df-http-server-0-7-2.lock
+33 silly lockFile 4dd7a8be-ttp-server-http-server-0-7-2-tgz https://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz
+34 verbose lock https://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz /Users/katiesimon/.npm/4dd7a8be-ttp-server-http-server-0-7-2-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz',
+35 verbose addRemoteTarball   'ff02e9338bfd9d3687668f090e088a7606eeb12e' ]
+36 info retry fetch attempt 1 at 17:52:58
+37 verbose fetch to= /var/folders/cp/5f5l9665367ftwdmy7lg12z40000gn/T/npm-6885-iY5hq-lw/registry.npmjs.org/http-server/-/http-server-0.7.2.tgz
+38 http GET https://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz
+39 http 200 https://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz
+40 silly lockFile 4dd7a8be-ttp-server-http-server-0-7-2-tgz https://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz
+41 silly lockFile 4dd7a8be-ttp-server-http-server-0-7-2-tgz https://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz
+42 silly lockFile b6ed51df-http-server-0-7-2 http-server@0.7.2
+43 silly lockFile b6ed51df-http-server-0-7-2 http-server@0.7.2
+44 silly lockFile 550353c6-http-server http-server@
+45 silly lockFile 550353c6-http-server http-server@
+46 silly resolved [ { name: 'http-server',
+46 silly resolved     version: '0.7.2',
+46 silly resolved     author: { name: 'Nodejitsu', email: 'support@nodejitsu.com' },
+46 silly resolved     description: 'a simple zero-configuration command-line http server',
+46 silly resolved     main: './lib/http-server',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git://github.com/nodeapps/http-server.git' },
+46 silly resolved     keywords: [ 'cli', 'command' ],
+46 silly resolved     scripts:
+46 silly resolved      { start: 'node ./bin/http-server',
+46 silly resolved        test: 'vows --spec --isolate' },
+46 silly resolved     contributors:
+46 silly resolved      [ [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object] ],
+46 silly resolved     dependencies:
+46 silly resolved      { colors: '0.6.x',
+46 silly resolved        optimist: '0.5.x',
+46 silly resolved        union: '0.3.x',
+46 silly resolved        ecstatic: '0.5.x',
+46 silly resolved        portfinder: '0.2.x',
+46 silly resolved        opener: '~1.3.0' },
+46 silly resolved     devDependencies: { vows: '0.7.x', request: '2.21.x' },
+46 silly resolved     bugs: { url: 'https://github.com/nodeapps/http-server/issues' },
+46 silly resolved     licenses: [ [Object] ],
+46 silly resolved     analyze: false,
+46 silly resolved     preferGlobal: 'true',
+46 silly resolved     bin: { 'http-server': './bin/http-server' },
+46 silly resolved     gitHead: '114380ce7802643784ef3c230745ee7917c9ded2',
+46 silly resolved     homepage: 'https://github.com/nodeapps/http-server',
+46 silly resolved     _id: 'http-server@0.7.2',
+46 silly resolved     _shasum: 'ff02e9338bfd9d3687668f090e088a7606eeb12e',
+46 silly resolved     _from: 'http-server@',
+46 silly resolved     _npmVersion: '2.0.2',
+46 silly resolved     _nodeVersion: '0.10.32',
+46 silly resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+46 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'ff02e9338bfd9d3687668f090e088a7606eeb12e',
+46 silly resolved        tarball: 'http://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/http-server/-/http-server-0.7.2.tgz' } ]
+47 info install http-server@0.7.2 into /usr/local/lib
+48 info installOne http-server@0.7.2
+49 verbose lib/node_modules/http-server unbuild
+50 verbose tar unpack /Users/katiesimon/.npm/http-server/0.7.2/package.tgz
+51 silly lockFile c2cc12bc-cal-lib-node-modules-http-server tar:///usr/local/lib/node_modules/http-server
+52 verbose lock tar:///usr/local/lib/node_modules/http-server /Users/katiesimon/.npm/c2cc12bc-cal-lib-node-modules-http-server.lock
+53 silly lockFile 40a7e616-pm-http-server-0-7-2-package-tgz tar:///Users/katiesimon/.npm/http-server/0.7.2/package.tgz
+54 verbose lock tar:///Users/katiesimon/.npm/http-server/0.7.2/package.tgz /Users/katiesimon/.npm/40a7e616-pm-http-server-0-7-2-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/http-server'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/http-server']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/http-server',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/http-server',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 13.3.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "http-server"
+60 error cwd /Users/katiesimon/Desktop/interest
+61 error node -v v0.10.32
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/http-server
+64 error fstream_path /usr/local/lib/node_modules/http-server
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/http-server'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]
