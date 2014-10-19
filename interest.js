@@ -21,22 +21,48 @@ console.log("aloha");
 	// take in 4 values from form
 	// make calculations using those values
 
-income = 100000.0;
-loanBalance = 10000.0;
-presentAge = 22;
-endAge = 65;
-loanTerm = 10;
-interestRate = .04;
+// income = 100000.0;
+// loanBalance = 10000.0;
+// presentAge = 22;
+// endAge = 65;
+// loanTerm = 10;
+// interestRate = .04;
 
 
-function submitForm() {
-	var loanBalance = document.getElementById(loanBalance);
-	var interestRate = document.getElementById("interestRate");
-	var loanTerm = document.getElementById("loanTerm");
-	var annualIncome = document.getElementById("income");
+// function submitForm() {
+// 	var loanBalance = document.getElementById("loanBalance");
+// 	var interestRate = document.getElementById("interestRate");
+// 	var loanTerm = document.getElementById("loanTerm");
+// 	var annualIncome = document.getElementById("income");
 
-	var 
-}
+// 	var presentAge = document.getElementById("age");
+// 
+jQuery(document).ready(function(){
+		console.log("test message");
+	$("#submitButton").click(function(){
+		var loanBalance = $("#loanBalance").val();
+		var interestRate = $("#interestRate").val();
+		var loanTerm = $("#loanTerm").val();
+		var income = $("#income").val();
+		var presentAge = $("#presentAge").val();
+		var endAge = 65;
+		
+		// Write these variables out to the charts (make more functions if need more)
+		var savingsPercent = getSavingsPercent(income, loanBalance);
+		var totalSavings = getTotalSavings(presentAge, endAge, income, savingsPercent);
+		var ageLoanFree = getAgeLoanFree(presentAge, income, loanBalance);
+
+		savingsData = new Array(presentAge - 65);
+		for (var i = 0; i < savingsData.length; i--) {
+			var endAgeForLoop = presentAge + i;
+			savingsData[i] = getTotalSavings(presentAge, endAgeForLoop, income, savingsPercent);
+		}
+
+		CHARTNAME.addData(savingsData[],);
+
+		console.log("savingsPercent" + savingsPercent);
+	});
+});
 
 // Get savings contribution as percent of income.
 function getSavingsPercent(income, loanBalance) {
@@ -48,7 +74,7 @@ function getSavingsPercent(income, loanBalance) {
 	if (iraAsPercent >= .2) {
 		return .2;
 	}
-	else if (iraAsPercent < .2 and iraAsPercent > 0) {
+	else if (iraAsPercent < .2 && iraAsPercent > 0) {
 		return iraAsPercent;
 	}
 }
@@ -85,7 +111,5 @@ function getAgeLoanFree(presentAge, income, loanBalance) {
 	var yearsToLoanFree = loanBalance/(income * 2);
 	return presentAge + yearsToLoanFree;
 }
-
-console.log("hey" + getAgeLoanFree);
 
 

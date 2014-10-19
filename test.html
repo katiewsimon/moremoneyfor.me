@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+<p>hey</p>
+<script type="text/javascript" source="interest.js">
+	
+
+// input loan information
+// input total income amount
+// output data visualization
+// options?
+// 
+
+// input form
+// form field: loan balance
+// form field: interest rate
+// form field: loan term (years)
+// form field: income
+
+
+
+// html form
+
+// declare function that will run when hit submit
+	// take in 4 values from form
+	// make calculations using those values
+
+income = 100000.0;
+loanBalance = 10000.0;
+presentAge = 22;
+endAge = 65;
+loanTerm = 10;
+interestRate = .04;
+
+
+function submitForm() {
+	var loanBalance = document.getElementById(loanBalance);
+	var interestRate = document.getElementById("interestRate");
+	var loanTerm = document.getElementById("loanTerm");
+	var annualIncome = document.getElementById("income");
+
+	var 
+}
+
+// Get savings contribution as percent of income.
+function getSavingsPercent(income, loanBalance) {
+
+	var minimumPayment = loanBalance/loanTerm;
+	var minimumPaymentPercent = minimumPayment/income;
+	var iraAsPercent = 5500.0/income;
+
+	if (iraAsPercent >= .2) {
+		return .2;
+	}
+	else if (iraAsPercent < .2 and iraAsPercent > 0) {
+		return iraAsPercent;
+	}
+}
+
+function getTotalSavings(presentAge, endAge, income, savingsPercent) {
+
+	var prevYearSavings = income * savingsPercent;
+	var totalSavings = 0;
+	var newYearSavings = 0;
+
+	for (var i = presentAge; i == 65; i++) {
+
+		prevYearSavings = income * savingsPercent;
+		var returnOnTotalSavings = totalSavings * .05;
+
+		if (savingsPercent < .2) {
+			savingsPercent += .01;
+			newYearSavings = prevYearSavings * savingsPercent;
+		}
+		else {
+			savingsPercent = .2;
+			newYearSavings = prevYearSavings * savingsPercent;
+		}
+
+		income += income * .02;
+
+		totalSavings += returnOnTotalSavings + newYearSavings;
+	}
+
+	return totalSavings;
+}
+
+function getAgeLoanFree(presentAge, income, loanBalance) {
+	var yearsToLoanFree = loanBalance/(income * 2);
+	return presentAge + yearsToLoanFree;
+}
+
+
+
+
+</script>
+
+</body>
+</html>
