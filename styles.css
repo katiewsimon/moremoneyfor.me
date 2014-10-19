@@ -1,22 +1,61 @@
 h1 {
 	font-family: "Helvetica Neue";
-	font-size: 400%;
-	color: white;
+	font-size: 300%;
+	color: #A4BD99;
 	letter-spacing: 5px;
-	padding: 30px;
 	font-weight: 100;
-	background-color: #A4BD99;
 	background-size: 25%;
+	padding: 0px;
 }
 
-h2 {
+#subtitle {
 	font-family: "Helvetica Neue";
-	color: #065C27;
+	font-size: 100%;
+	color: #A4BD99;
+	letter-spacing: 5px;
+	font-weight: 100;
+	background-size: 25%;
+	padding: 0px;
+}
+
+/* unvisited link */
+a:link {
+    color: #A4BD99;
+}
+
+/* visited link */
+a:visited {
+    color: #A4BD99;
+}
+
+/* mouse over link */
+a:hover {
+    color: #A4BD99;
+}
+
+/* selected link */
+a:active {
+    color: #A4BD99;
+}
+
+
+h2, p {
+	font-family: "HelveticaNeue-thin";
+	font-size: 250%;
+	color: black;
 	letter-spacing: 5px;
 	padding-left: 25px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	font-weight: normal;
+}
+
+
+IMG.img-responsive {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
 }
 
 figcaption {
@@ -34,4 +73,8 @@ h3 {
 	padding-left: 25px;
 	font-weight: 100;
 	background-color: #A4BD99;
+}
+
+form {
+	font-family: "Helvetica Neue";
 }
