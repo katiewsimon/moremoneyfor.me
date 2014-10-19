@@ -30,50 +30,59 @@
 	</div> <!--close container div-->
 
 
-<form class="form-inline" role="form">
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="email">enter the loan balance: </label>
-    <div class="col-sm-10">
-      <input type="number" class="form-control" id="loanBalance" placeholder="loan balance">
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="email">enter the interest rate: </label>
-    <div class="col-sm-10">
-      <input type="number" class="form-control" id="interestRate" placeholder="interest rate">
-    </div>
-  </div>
-
-   <div class="form-group">
-    <label class="control-label col-sm-2" for="email">enter the loan term: </label>
-    <div class="col-sm-10">
-      <input type="number" class="form-control" id="loanTerm" placeholder="loan term">
-    </div>
-  </div>
-
-    <div class="form-group">
-    <label class="control-label col-sm-2" for="email">enter your annual income: </label>
-    <div class="col-sm-10">
-      <input type="number" class="form-control" id="income" placeholder="annual income">
-    </div>
-  </div>
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-12">
+    <form class="form-inline" role="form">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">loan balance: </label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="loanBalance" placeholder="loan balance">
+        </div>
+      </div>
 
       <div class="form-group">
-    <label class="control-label col-sm-2" for="email">enter your age: </label>
-    <div class="col-sm-10">
-      <input type="number" class="form-control" id="presentAge" placeholder="age">
+        <label class="control-label col-sm-2" for="email">interest rate: </label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="interestRate" placeholder="interest rate">
+        </div>
+      </div>
+
+       <div class="form-group">
+        <label class="control-label col-sm-2" for="email">loan term: </label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="loanTerm" placeholder="years">
+        </div>
+      </div>
+
+        <div class="form-group">
+        <label class="control-label col-sm-2" for="email">annual income: </label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="income" placeholder="annual income">
+        </div>
+      </div>
+
+          <div class="form-group">
+        <label class="control-label col-sm-2" for="email">age: </label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="presentAge" placeholder="age">
+        </div>
+      </div>
+
+      <div class="form-group"> 
+        <div class="col-sm-offset-2 col-sm-10">
+          <a href="javascript:;" onclick="click();" class="btn btn-default" id="submitButton">calculate!</a>
+        </div>
+      </div>
+    </form>
+
+    </div>
+
+    <div class="col-sm-8 col-sm-offset-2">
+      <canvas id="savings" width="600" height="400"></canvas>
     </div>
   </div>
-
-  <div class="form-group"> 
-    <div class="col-sm-offset-2 col-sm-10">
-      <a href="javascript:;" onclick="click();" class="btn btn-default" id="submitButton">calculate!</a>
-    </div>
-  </div>
-</form>
-
-<canvas id="savings" width="600" height="400"></canvas>
+</div>
 
 <script>
   // var data = {
