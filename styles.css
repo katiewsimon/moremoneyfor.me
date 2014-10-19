@@ -1,21 +1,47 @@
-h1 {
-	font-family: "Helvetica Neue";
-	font-size: 300%;
-	color: #A4BD99;
+
+h2 {
+	font-family: "HelveticaNeue-thin";
+	font-size: 250%;
+	color: black;
 	letter-spacing: 5px;
-	font-weight: 100;
-	background-size: 25%;
-	padding: 0px;
+	padding-top: 0px;
+	padding-left: 25px;
+	padding-bottom: 25px;
+	font-weight: normal;
+	text-align: center;
 }
 
-#subtitle {
+
+IMG.img-responsive {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+figcaption {
 	font-family: "Helvetica Neue";
-	font-size: 100%;
-	color: #A4BD99;
+	color: black;
 	letter-spacing: 5px;
 	font-weight: 100;
-	background-size: 25%;
-	padding: 0px;
+}
+
+h3 {
+	font-family: "Helvetica Neue";
+	font-size: 400%;
+	color: white;
+	letter-spacing: 5px;
+	padding-left: 25px;
+	font-weight: 100;
+	background-color: #A4BD99;
+}
+
+.form-inline {
+	padding-top: 50px;
+}
+
+.header {
+    text-align: left;
 }
 
 /* unvisited link */
@@ -36,45 +62,4 @@ a:hover {
 /* selected link */
 a:active {
     color: #A4BD99;
-}
-
-
-h2, p {
-	font-family: "HelveticaNeue-thin";
-	font-size: 250%;
-	color: black;
-	letter-spacing: 5px;
-	padding-left: 25px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	font-weight: normal;
-}
-
-
-IMG.img-responsive {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
-}
-
-figcaption {
-	font-family: "Helvetica Neue";
-	color: black;
-	letter-spacing: 5px;
-	font-weight: 100;
-}
-
-h3 {
-	font-family: "Helvetica Neue";
-	font-size: 400%;
-	color: white;
-	letter-spacing: 5px;
-	padding-left: 25px;
-	font-weight: 100;
-	background-color: #A4BD99;
-}
-
-form {
-	font-family: "Helvetica Neue";
 }
