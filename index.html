@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id = "loanBalance" ACTION = "" METHOD = "GET">
+Enter your loan balance: <br>
+<input type = "number" name = "loanBalance"><br>
+</form>
+
+<form>
+<form id = "interestRate" ACTION = "" METHOD = "GET">
+Enter your interest rate: <br>
+<input type = "number" name = "interestRate"><br>
+</form>
+
+<form>
+<form id = "loanTerm" ACTION = "" METHOD = "GET">
+Enter your loan term: <br>
+<input type = "number" name = "loanTerm"><br>
+</form>
+
+<form>
+<form id = "income" ACTION = "" METHOD = "GET">
+Enter your annual income: <br>
+<input type = "number" name = "income" onclick = "testFunction()" value = "submit"><br>
+</form>
+
+<script>
+function testFunction() {
+	document.getElementById("interestForm").submit();
+}
+</script>
+
+</body>
+</html>
+
+<!--<input type = "button" onclick = "testFunction()" value = "submit">
+-->
