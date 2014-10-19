@@ -1,0 +1,37 @@
+h1 {
+	font-family: "Helvetica Neue";
+	font-size: 400%;
+	color: white;
+	letter-spacing: 5px;
+	padding: 30px;
+	font-weight: 100;
+	background-color: #A4BD99;
+	background-size: 25%;
+}
+
+h2 {
+	font-family: "Helvetica Neue";
+	color: #065C27;
+	letter-spacing: 5px;
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-weight: normal;
+}
+
+figcaption {
+	font-family: "Helvetica Neue";
+	color: black;
+	letter-spacing: 5px;
+	font-weight: 100;
+}
+
+h3 {
+	font-family: "Helvetica Neue";
+	font-size: 400%;
+	color: white;
+	letter-spacing: 5px;
+	padding-left: 25px;
+	font-weight: 100;
+	background-color: #A4BD99;
+}
